@@ -1,0 +1,8 @@
+{
+  "name": "Remix: BBQ Tonight",
+  "description": "A premium, modern, fully responsive restaurant website featuring an interactive menu, online reservation, chef\u0027s showcase, image gallery, and customer testimonials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Premium Color System */
+  --color-emerald-50: #f1f8f5;
+  --color-emerald-100: #dcece2;
+  --color-emerald-200: #badbc8;
+  --color-emerald-300: #8ec3a4;
+  --color-emerald-400: #5ea17a;
+  --color-emerald-500: #1b7a43;
+  --color-emerald-600: #135d32;
+  --color-emerald-700: #0d4624;
+  --color-emerald-800: #09321b;
+  --color-emerald-900: #062313;
+  --color-emerald-950: #04170c;
+
+  --color-gold-50: #faf7f0;
+  --color-gold-100: #f4eed9;
+  --color-gold-200: #ebdcb3;
+  --color-gold-300: #dfc285;
+  --color-gold-400: #d2a758;
+  --color-gold-500: #c58e31;
+  --color-gold-600: #ab7827;
+  --color-gold-700: #8c5f1e;
+  --color-gold-800: #6d4717;
+  --color-gold-900: #523412;
+  --color-gold-950: #2d1c09;
+}
+
+/* Elegant scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fbf9f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #c58e31; /* gold-500 */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ab7827; /* gold-600 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbfaf6;
+  color: #0c1410;
+  overflow-x: hidden;
+}
