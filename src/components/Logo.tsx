@@ -70,15 +70,12 @@ export default function Logo({
       </motion.div>
       
       {/* Typography Design for BBQ Tonight */}
-      <div className="flex flex-col text-left">
-        <span className={`font-serif text-2xl sm:text-3xl tracking-[0.14em] font-black block leading-none ${textColor} transition-colors duration-300`}>
+      <div className="flex flex-row items-baseline gap-2 text-left">
+        <span className={`font-serif text-2xl sm:text-3xl tracking-[0.14em] font-black leading-none ${textColor} transition-colors duration-300`}>
           BBQ
         </span>
-        <span className={`text-[9px] sm:text-[11.5px] tracking-[0.4em] font-mono font-black block mt-1 uppercase ${subColor} transition-colors duration-300`}>
+        <span className={`text-[12px] sm:text-[14px] tracking-[0.25em] font-mono font-black uppercase ${subColor} transition-colors duration-300`}>
           TONIGHT
-        </span>
-        <span className="text-[7px] sm:text-[8.5px] tracking-[0.1em] font-sans font-bold text-neutral-400 block mt-1 uppercase whitespace-nowrap">
-          Karachi - Biryani - Fish - Spices
         </span>
       </div>
     </div>

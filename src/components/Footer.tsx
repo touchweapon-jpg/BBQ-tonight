@@ -18,7 +18,11 @@ import {
   Globe
 } from "lucide-react";
 
-export default function Footer() {
+interface FooterProps {
+  onEnterAdmin?: () => void;
+}
+
+export default function Footer({ onEnterAdmin }: FooterProps) {
   const { name, address, phone, email } = RESTAURANT_INFO;
 
   const handleScrollToTop = () => {
@@ -164,8 +168,19 @@ export default function Footer() {
 
         {/* Lower tier copyright & back to top page trigger */}
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs space-y-4 sm:space-y-0 text-gray-500">
-          <div>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
             <p>© {new Date().getFullYear()} BBQ Tonight. All Rights Reserved.</p>
+            {onEnterAdmin && (
+              <>
+                <span className="text-gray-700 select-none hidden sm:inline">•</span>
+                <button
+                  onClick={onEnterAdmin}
+                  className="text-gray-400 hover:text-gold-400 transition-all cursor-pointer bg-white/5 hover:bg-white/10 border border-white/10 rounded-md px-2.5 py-1 focus:outline-none"
+                >
+                  Admin Portal
+                </button>
+              </>
+            )}
           </div>
 
           {/* Back to top button */}

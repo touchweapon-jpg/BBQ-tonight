@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { ReservationData } from "../types";
+import { db } from "../utils/db";
 
 export default function ReservationSection() {
   const [formData, setFormData] = useState<ReservationData>({
@@ -124,6 +125,18 @@ export default function ReservationSection() {
       const randNum = Math.floor(1000 + Math.random() * 9000);
       const code = `SV-${formData.date.replace(/-/g, "").substring(2, 6)}-X${randNum}`;
       
+      // Save reservation to local database
+      db.addReservation({
+        name: formData.name,
+        phone: formData.phone,
+        email: "",
+        date: formData.date,
+        time: formData.time,
+        guests: formData.guests,
+        specialRequests: formData.specialRequests || "",
+        status: "Pending"
+      });
+
       setBookingCode(code);
       setSuccessData(formData);
       setIsSubmitting(false);

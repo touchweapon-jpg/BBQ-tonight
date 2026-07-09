@@ -4,9 +4,9 @@
  */
 
 import { useState, useEffect } from "react";
-import { MENU_ITEMS } from "../data";
 import { MenuCategoryType, MenuItem } from "../types";
 import { motion, AnimatePresence } from "motion/react";
+import { db } from "../utils/db";
 import { 
   Coffee, 
   GlassWater, 
@@ -24,6 +24,15 @@ export default function MenuSection() {
   const [activeCategory, setActiveCategory] = useState<MenuCategoryType>("lunch");
   const [activeIndex, setActiveIndex] = useState(0);
   const [slideDirection, setSlideDirection] = useState(1); // 1 = forward, -1 = backward
+  const [menuItems, setMenuItems] = useState(() => db.getMenuItems());
+
+  useEffect(() => {
+    const handleUpdate = () => {
+      setMenuItems(db.getMenuItems());
+    };
+    window.addEventListener("bbq_db_updated", handleUpdate);
+    return () => window.removeEventListener("bbq_db_updated", handleUpdate);
+  }, []);
 
   const categories: { key: MenuCategoryType; label: string; icon: any }[] = [
     { key: "breakfast", label: "Sunday Brunch", icon: Coffee },
@@ -32,7 +41,7 @@ export default function MenuSection() {
     { key: "drinks", label: "Artisanal Libations", icon: GlassWater },
   ];
 
-  const filteredItems = MENU_ITEMS.filter((item) => item.category === activeCategory);
+  const filteredItems = menuItems.filter((item) => item.category === activeCategory);
   const activeItem = filteredItems[activeIndex] || filteredItems[0];
 
   // Reset active index when category changes
@@ -259,6 +268,13 @@ export default function MenuSection() {
                         transition={{ duration: 0.4 }}
                         className="flex flex-wrap gap-1.5"
                       >
+                        {activeItem.availability === "Out of Stock" && (
+                          <span
+                            className="bg-rose-50 text-rose-700 border border-rose-200 text-[9px] font-bold font-sans tracking-wide uppercase px-2.5 py-1.5 rounded-lg shadow-sm animate-pulse"
+                          >
+                            Sold Out
+                          </span>
+                        )}
                         {activeItem.tags && activeItem.tags.map((tag) => (
                           <span
                             key={tag}
