@@ -51,7 +51,7 @@ export default function Hero() {
       <div className="absolute inset-x-0 bottom-0 top-32 sm:top-40 lg:top-[13%] opacity-[0.035] bg-[radial-gradient(#E65A1E_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
 
       {/* Main Grid Wrapper */}
-      <div className="relative max-w-7xl mx-auto px-6 md:px-12 w-full z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div className="relative max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] mx-auto px-6 md:px-12 w-full z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         
         {/* Left Side: Editorial Typography & Copywriting */}
         <div className="lg:col-span-7 space-y-8 text-left">
@@ -77,7 +77,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="font-serif text-4xl sm:text-6xl lg:text-7xl text-emerald-950 tracking-tight leading-[1.1]"
+              className="font-serif text-4xl sm:text-6xl lg:text-7xl 2xl:text-8xl text-emerald-950 tracking-tight leading-[1.1]"
             >
               Where culinary <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-emerald-500 to-emerald-600 italic font-medium pr-1">
@@ -101,7 +101,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-emerald-900/80 font-sans text-base md:text-lg max-w-2xl font-light leading-relaxed"
+            className="text-emerald-900/80 font-sans text-base md:text-lg 2xl:text-xl max-w-2xl 2xl:max-w-3xl font-light leading-relaxed"
           >
             BBQ Tonight is an elite wood-fired smokehouse where heritage pitmaster secrets are combined with avant-garde culinary mechanics to craft spectacular dining realities.
           </motion.p>
@@ -138,7 +138,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.9, delay: 0.4 }}
-            className="grid grid-cols-3 gap-3 xs:gap-6 pt-8 border-t border-emerald-200 max-w-lg"
+            className="grid grid-cols-3 gap-3 xs:gap-6 pt-8 border-t border-emerald-200 max-w-lg 2xl:max-w-xl"
           >
             <div>
               <span className="block font-serif text-sm xs:text-base sm:text-xl lg:text-2xl font-black text-emerald-500">3 Michelin</span>

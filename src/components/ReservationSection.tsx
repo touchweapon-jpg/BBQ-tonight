@@ -160,7 +160,7 @@ export default function ReservationSection() {
 
   return (
     <section id="reservation" className="py-24 bg-white scroll-mt-12 group">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Reservation Story Banner Section */}
@@ -168,7 +168,7 @@ export default function ReservationSection() {
             <span className="text-emerald-700 font-mono text-xs uppercase tracking-[0.3em] font-semibold">
               Tables & Private Lounges
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl text-gray-900 tracking-tight font-bold">
+            <h2 className="font-serif text-4xl md:text-5xl 2xl:text-6xl text-gray-900 tracking-tight font-bold">
               Secure Your Culinary Experience
             </h2>
             <p className="text-gray-600 font-sans text-sm md:text-base font-light leading-relaxed">

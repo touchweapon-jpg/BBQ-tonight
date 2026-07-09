@@ -49,7 +49,7 @@ export default function Footer({ onEnterAdmin }: FooterProps) {
       {/* Absolute faint background glow */}
       <div className="absolute left-0 bottom-0 w-80 h-80 bg-gold-500/5 rounded-full filter blur-3xl translate-y-20 -translate-x-20" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] mx-auto px-6 md:px-12 relative z-10">
         
         {/* Upper tier layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 md:gap-14 pb-14 border-b border-white/5">

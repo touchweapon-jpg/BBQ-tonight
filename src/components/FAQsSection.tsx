@@ -50,14 +50,14 @@ export default function FAQsSection() {
 
   return (
     <section id="faqs" className="py-24 bg-white scroll-mt-12 overflow-hidden border-t border-neutral-100">
-      <div className="max-w-4xl mx-auto px-6 md:px-12">
+      <div className="max-w-4xl 2xl:max-w-5xl mx-auto px-6 md:px-12">
         
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-emerald-500 font-mono text-xs uppercase tracking-[0.3em] font-semibold block mb-3">
             Gourmet Queries
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl text-gray-900 tracking-tight font-bold">
+          <h2 className="font-serif text-4xl md:text-5xl 2xl:text-6xl text-gray-900 tracking-tight font-bold">
             Frequently Asked Questions
           </h2>
           <div className="h-0.5 w-16 bg-gold-400 mx-auto mt-4" />

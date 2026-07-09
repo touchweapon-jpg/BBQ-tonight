@@ -60,11 +60,11 @@ export default function Navbar() {
   return (
     <header
       id="navbar-header"
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm border-b border-emerald-900/5 ${
-        isScrolled ? "py-3.5" : "py-5"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm border-b border-emerald-900/5 ${
+        isScrolled ? "py-1.5" : "py-2.5"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo and Brand */}
         <a
           id="nav-logo"
@@ -110,7 +110,7 @@ export default function Navbar() {
             id="nav-cta-btn"
             href="#reservation"
             onClick={(e) => handleSmoothScroll(e, "#reservation")}
-            className="flex items-center space-x-2 px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 border border-transparent text-white bg-gradient-to-r from-gold-400 via-emerald-500 to-emerald-600 hover:from-gold-300 hover:to-emerald-500 shadow-md shadow-emerald-500/15 transform hover:scale-[1.02] cursor-pointer"
+            className="flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 border border-transparent text-white bg-gradient-to-r from-gold-400 via-emerald-500 to-emerald-600 hover:from-gold-300 hover:to-emerald-500 shadow-md shadow-emerald-500/15 transform hover:scale-[1.02] cursor-pointer"
           >
             <Calendar className="h-4 w-4 text-white" />
             <span>Book Table</span>

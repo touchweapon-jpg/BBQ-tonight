@@ -131,14 +131,14 @@ export default function MenuSection() {
 
   return (
     <section id="menu" className="py-24 bg-gradient-to-b from-emerald-50/15 via-white to-emerald-50/10 scroll-mt-12 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] mx-auto px-6 md:px-12">
         
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-emerald-700 font-mono text-xs uppercase tracking-[0.3em] font-bold block mb-3">
             Culinary Offerings
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl text-gray-900 tracking-tight font-bold">
+          <h2 className="font-serif text-4xl md:text-5xl 2xl:text-6xl text-gray-900 tracking-tight font-bold">
             Browse Our Digital Menu
           </h2>
           <div className="h-0.5 w-16 bg-gold-400 mx-auto mt-4" />
@@ -173,7 +173,7 @@ export default function MenuSection() {
 
         {/* One-by-One Theatrical Showcase Block */}
         {activeItem && (
-          <div className="relative max-w-6xl mx-auto">
+          <div className="relative max-w-6xl 2xl:max-w-[1320px] 3xl:max-w-[1480px] mx-auto">
             {/* 
               No rigid card container here! An elegant, open, grid structure floating 
               seamlessly over the body theme background with deep artistic negative space.
@@ -297,7 +297,7 @@ export default function MenuSection() {
                       exit="exit"
                       className="space-y-5"
                     >
-                      <h3 className="font-serif text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
+                      <h3 className="font-serif text-3xl md:text-5xl 2xl:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
                         {activeItem.name}
                       </h3>
                       <p className="text-gray-600 text-sm md:text-base font-light font-sans leading-relaxed">
