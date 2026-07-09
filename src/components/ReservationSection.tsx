@@ -232,8 +232,8 @@ export default function ReservationSection() {
                           placeholder="Lord Alexander Sterling"
                           className={`w-full bg-white border rounded-xl pl-11 pr-4 py-3 text-sm transition-all focus:outline-none focus:ring-2 ${
                             errors.name
-                              ? "border-red-400 focus:ring-red-250 focus:border-red-500"
-                              : "border-gray-200 focus:ring-emerald-750 focus:border-emerald-600"
+                              ? "border-red-400 focus:ring-red-200 focus:border-red-500"
+                              : "border-gray-250 focus:ring-emerald-500/55 focus:border-emerald-500"
                           }`}
                         />
                       </div>
@@ -260,8 +260,8 @@ export default function ReservationSection() {
                           placeholder="(555) 000-0000"
                           className={`w-full bg-white border rounded-xl pl-11 pr-4 py-3 text-sm transition-all focus:outline-none focus:ring-2 ${
                             errors.phone
-                              ? "border-red-400 focus:ring-red-250 focus:border-red-500"
-                              : "border-gray-200 focus:ring-emerald-750 focus:border-emerald-600"
+                              ? "border-red-400 focus:ring-red-200 focus:border-red-500"
+                              : "border-gray-250 focus:ring-emerald-500/55 focus:border-emerald-500"
                           }`}
                         />
                       </div>
@@ -288,8 +288,8 @@ export default function ReservationSection() {
                           onChange={handleInputChange}
                           className={`w-full bg-white border rounded-xl pl-11 pr-4 py-3 text-sm transition-all focus:outline-none focus:ring-2 ${
                             errors.date
-                              ? "border-red-400 focus:ring-red-250 focus:border-red-500"
-                              : "border-gray-200 focus:ring-emerald-750 focus:border-emerald-600"
+                              ? "border-red-400 focus:ring-red-200 focus:border-red-500"
+                              : "border-gray-250 focus:ring-emerald-500/55 focus:border-emerald-500"
                           }`}
                         />
                       </div>
@@ -314,8 +314,8 @@ export default function ReservationSection() {
                           onChange={handleInputChange}
                           className={`w-full bg-white border rounded-xl pl-11 pr-4 py-3 text-sm appearance-none transition-all focus:outline-none focus:ring-2 ${
                             errors.time
-                              ? "border-red-400 focus:ring-red-250 focus:border-red-500"
-                              : "border-gray-200 focus:ring-emerald-750 focus:border-emerald-600"
+                              ? "border-red-400 focus:ring-red-200 focus:border-red-500"
+                              : "border-gray-250 focus:ring-emerald-500/55 focus:border-emerald-500"
                           }`}
                         >
                           <option value="">Choose seating slot</option>
@@ -350,7 +350,7 @@ export default function ReservationSection() {
                           name="guests"
                           value={formData.guests}
                           onChange={handleInputChange}
-                          className="w-full bg-white border border-gray-200 rounded-xl pl-11 pr-4 py-3 text-sm appearance-none focus:outline-none focus:ring-2 focus:ring-emerald-750 focus:border-emerald-600 transition-all"
+                          className="w-full bg-white border border-gray-200 rounded-xl pl-11 pr-4 py-3 text-sm appearance-none focus:outline-none focus:ring-2 focus:ring-emerald-500/55 focus:border-emerald-500 transition-all"
                         >
                           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
                             <option key={num} value={num}>
@@ -373,7 +373,7 @@ export default function ReservationSection() {
                         value={formData.specialRequests}
                         onChange={handleInputChange}
                         placeholder="E.g., Gluten allergy, Celebrating a 10th anniversary, Requesting window seating if possible..."
-                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm transition-all focus:outline-none focus:ring-2 focus:ring-emerald-750 focus:border-emerald-600"
+                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/55 focus:border-emerald-500"
                       />
                     </div>
                   </div>
@@ -382,7 +382,7 @@ export default function ReservationSection() {
                     id="reservation-submit-btn"
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full mt-2 cursor-pointer flex items-center justify-center space-x-3 bg-emerald-900 text-white font-bold py-4 rounded-xl uppercase hover:bg-emerald-950 transition-all duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-emerald-750"
+                    className="w-full mt-2 cursor-pointer flex items-center justify-center space-x-3 bg-gradient-to-r from-gold-400 via-emerald-500 to-emerald-600 text-white font-bold py-4 rounded-xl uppercase hover:from-gold-350 hover:to-emerald-550 transition-all duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transform hover:scale-[1.01]"
                   >
                     {isSubmitting ? (
                       <>

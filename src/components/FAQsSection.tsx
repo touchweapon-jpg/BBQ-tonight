@@ -54,7 +54,7 @@ export default function FAQsSection() {
         
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-emerald-700 font-mono text-xs uppercase tracking-[0.3em] font-semibold block mb-3">
+          <span className="text-emerald-500 font-mono text-xs uppercase tracking-[0.3em] font-semibold block mb-3">
             Gourmet Queries
           </span>
           <h2 className="font-serif text-4xl md:text-5xl text-gray-900 tracking-tight font-bold">
@@ -81,7 +81,7 @@ export default function FAQsSection() {
                 transition={{ duration: 0.5, delay: idx * 0.08 }}
                 className={`rounded-[1.5rem] border transition-all duration-300 overflow-hidden ${
                   isExpanded 
-                    ? "border-emerald-700/25 bg-emerald-50/10 shadow-lg shadow-emerald-900/[0.02]" 
+                    ? "border-emerald-500/25 bg-emerald-50/20 shadow-lg shadow-emerald-950/[0.02]" 
                     : "border-neutral-150 bg-[#FAF9F5]/45 hover:bg-[#FAF9F5] hover:border-neutral-250"
                 }`}
               >
@@ -93,7 +93,7 @@ export default function FAQsSection() {
                 >
                   <div className="flex items-start md:items-center gap-3 md:gap-4">
                     <HelpCircle className={`h-4.5 w-4.5 md:h-5 md:w-5 flex-shrink-0 mt-0.5 md:mt-0 transition-colors duration-300 ${
-                      isExpanded ? "text-emerald-750" : "text-gray-400"
+                      isExpanded ? "text-emerald-500" : "text-gray-400"
                     }`} />
                     <span className="font-serif font-bold text-gray-900 text-sm xs:text-base md:text-lg tracking-tight leading-snug">
                       {faq.question}
@@ -105,7 +105,7 @@ export default function FAQsSection() {
                     animate={{ rotate: isExpanded ? 180 : 0 }}
                     transition={{ type: "spring", stiffness: 200, damping: 18 }}
                     className={`p-1 rounded-full flex-shrink-0 transition-colors duration-300 ${
-                      isExpanded ? "bg-emerald-700/10 text-emerald-800" : "bg-neutral-100 text-gray-500"
+                      isExpanded ? "bg-emerald-500/10 text-emerald-500" : "bg-neutral-100 text-gray-500"
                     }`}
                   >
                     <ChevronDown className="h-4 w-4 md:h-5 md:w-5" />

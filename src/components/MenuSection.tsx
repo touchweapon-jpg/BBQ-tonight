@@ -151,11 +151,11 @@ export default function MenuSection() {
                 onClick={() => setActiveCategory(cat.key)}
                 className={`flex items-center space-x-2.5 px-6 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 shadow-sm cursor-pointer ${
                   isActive
-                    ? "bg-emerald-900 text-white shadow-md shadow-emerald-950/20"
-                    : "bg-white text-gray-800 hover:bg-emerald-50/50 hover:text-emerald-700 border border-neutral-100"
+                    ? "bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
+                    : "bg-white text-gray-800 hover:bg-emerald-50 hover:text-emerald-500 border border-neutral-100"
                 }`}
               >
-                <Icon className={`h-4 w-4 ${isActive ? "text-gold-300" : "text-gray-400 group-hover:text-emerald-600"}`} />
+                <Icon className={`h-4 w-4 ${isActive ? "text-white" : "text-gray-400 group-hover:text-emerald-500"}`} />
                 <span>{cat.label}</span>
               </button>
             );
@@ -207,7 +207,7 @@ export default function MenuSection() {
 
                   {/* Floated Price Label badge */}
                   <div className="absolute top-4 right-4 sm:top-8 sm:right-8 bg-white/95 backdrop-blur-md px-3.5 py-1.5 sm:px-5 sm:py-2.5 rounded-full border border-neutral-150 shadow-lg z-15">
-                    <span className="font-serif font-black text-emerald-850 text-sm sm:text-xl">
+                    <span className="font-serif font-black text-emerald-500 text-sm sm:text-xl">
                       ${activeItem.price.toFixed(2)}
                     </span>
                   </div>
@@ -216,14 +216,14 @@ export default function MenuSection() {
                   <div className="absolute inset-x-2 sm:inset-x-6 top-1/2 -translate-y-1/2 flex justify-between pointer-events-none z-20">
                     <button
                       onClick={handlePrev}
-                      className="pointer-events-auto p-2 sm:p-3.5 rounded-full bg-white/90 hover:bg-white text-emerald-900 hover:text-emerald-950 shadow-md active:scale-90 transition-all cursor-pointer backdrop-blur-sm border border-neutral-100"
+                      className="pointer-events-auto p-2 sm:p-3.5 rounded-full bg-white/90 hover:bg-white text-emerald-500 hover:text-emerald-650 shadow-md active:scale-90 transition-all cursor-pointer backdrop-blur-sm border border-neutral-100"
                       aria-label="Previous Culinary Creation"
                     >
                       <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" />
                     </button>
                     <button
                       onClick={handleNext}
-                      className="pointer-events-auto p-2 sm:p-3.5 rounded-full bg-white/90 hover:bg-white text-emerald-900 hover:text-emerald-950 shadow-md active:scale-90 transition-all cursor-pointer backdrop-blur-sm border border-neutral-100"
+                      className="pointer-events-auto p-2 sm:p-3.5 rounded-full bg-white/90 hover:bg-white text-emerald-500 hover:text-emerald-650 shadow-md active:scale-90 transition-all cursor-pointer backdrop-blur-sm border border-neutral-100"
                       aria-label="Next Culinary Creation"
                     >
                       <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
@@ -326,8 +326,8 @@ export default function MenuSection() {
                           onClick={() => handleSelectIndex(idx)}
                           className={`group relative text-left rounded-2xl overflow-hidden border transition-all duration-300 cursor-pointer p-1.5 flex flex-col items-center justify-center space-y-1.5 ${
                             isSelected
-                              ? "border-emerald-700 bg-white ring-2 ring-emerald-700/15 shadow-lg"
-                              : "border-neutral-150 bg-white hover:bg-emerald-50/10 hover:border-emerald-600/30"
+                              ? "border-emerald-500 bg-white ring-2 ring-emerald-500/15 shadow-lg"
+                              : "border-neutral-150 bg-white hover:bg-emerald-50/10 hover:border-emerald-500/30"
                           }`}
                         >
                           <div className="w-full aspect-square rounded-xl overflow-hidden relative">
@@ -340,13 +340,13 @@ export default function MenuSection() {
                               referrerPolicy="no-referrer"
                             />
                             {isSelected && (
-                              <div className="absolute inset-0 bg-emerald-900/10 flex items-center justify-center" />
+                              <div className="absolute inset-0 bg-emerald-500/10 flex items-center justify-center" />
                             )}
                           </div>
                           
                           {/* Squeezed text label */}
                           <span className={`block text-[9px] font-sans font-bold text-center truncate w-full px-1 ${
-                            isSelected ? "text-emerald-900 font-extrabold" : "text-gray-500 group-hover:text-emerald-800"
+                            isSelected ? "text-emerald-500 font-extrabold" : "text-gray-500 group-hover:text-emerald-500"
                           }`}>
                             {item.name.split(" ")[0]}...
                           </span>

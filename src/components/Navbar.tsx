@@ -60,10 +60,8 @@ export default function Navbar() {
   return (
     <header
       id="navbar-header"
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-350 ${
-        isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-emerald-900/5 py-4.5"
-          : "bg-transparent py-6"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm border-b border-emerald-900/5 ${
+        isScrolled ? "py-3.5" : "py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
@@ -75,8 +73,8 @@ export default function Navbar() {
           className="block"
         >
           <Logo 
-            textColor={isScrolled ? "text-emerald-950" : "text-white"} 
-            subColor={isScrolled ? "text-gold-600" : "text-gold-300"} 
+            textColor="text-emerald-950" 
+            subColor="text-emerald-555" 
           />
         </a>
 
@@ -90,20 +88,16 @@ export default function Navbar() {
                   href={link.href}
                   onClick={(e) => handleSmoothScroll(e, link.href)}
                   className={`text-sm tracking-wider font-semibold transition-all duration-200 relative py-1.5 ${
-                    isScrolled
-                      ? activeSection === link.href.substring(1)
-                        ? "text-emerald-900 font-bold"
-                        : "text-gray-800 hover:text-emerald-700"
-                      : activeSection === link.href.substring(1)
-                        ? "text-gold-400 font-bold"
-                        : "text-white/85 hover:text-white"
+                    activeSection === link.href.substring(1)
+                      ? "text-emerald-500 font-bold"
+                      : "text-gray-700 hover:text-emerald-500"
                   }`}
                 >
                   {link.name}
                   {activeSection === link.href.substring(1) && (
                     <motion.span
                       layoutId="activeNavIndicator"
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold-400 rounded-full"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-emerald-500 rounded-full"
                       transition={{ type: "spring", stiffness: 350, damping: 28 }}
                     />
                   )}
@@ -116,13 +110,9 @@ export default function Navbar() {
             id="nav-cta-btn"
             href="#reservation"
             onClick={(e) => handleSmoothScroll(e, "#reservation")}
-            className={`flex items-center space-x-2 px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 border transform hover:scale-[1.02] cursor-pointer ${
-              isScrolled
-                ? "text-white bg-emerald-900 hover:bg-emerald-950 shadow-md shadow-emerald-950/20 border-transparent"
-                : "text-emerald-950 bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 hover:from-gold-200 hover:to-gold-400 shadow-lg shadow-gold-500/10 border-transparent"
-            }`}
+            className="flex items-center space-x-2 px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 border border-transparent text-white bg-gradient-to-r from-gold-400 via-emerald-500 to-emerald-600 hover:from-gold-300 hover:to-emerald-500 shadow-md shadow-emerald-500/15 transform hover:scale-[1.02] cursor-pointer"
           >
-            <Calendar className={`h-4 w-4 ${isScrolled ? "text-gold-300" : "text-emerald-950"}`} />
+            <Calendar className="h-4 w-4 text-white" />
             <span>Book Table</span>
           </a>
         </nav>
@@ -131,9 +121,7 @@ export default function Navbar() {
         <button
           id="nav-hamburger-trigger"
           onClick={() => setIsOpen(!isOpen)}
-          className={`lg:hidden p-2 transition-colors focus:outline-none ${
-            isScrolled ? "text-gray-800 hover:text-emerald-700" : "text-white hover:text-gold-300"
-          }`}
+          className="lg:hidden p-2 transition-colors focus:outline-none text-gray-800 hover:text-emerald-500"
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -160,8 +148,8 @@ export default function Navbar() {
                     onClick={(e) => handleSmoothScroll(e, link.href)}
                     className={`block py-2 text-base font-semibold border-l-4 pl-3 ${
                       activeSection === link.href.substring(1)
-                        ? "text-emerald-800 border-emerald-600 bg-emerald-50/50"
-                        : "text-gray-700 border-transparent hover:text-emerald-600 hover:border-emerald-200"
+                        ? "text-emerald-500 border-emerald-500 bg-emerald-50"
+                        : "text-gray-700 border-transparent hover:text-emerald-550 hover:border-emerald-100"
                     }`}
                   >
                     {link.name}
@@ -173,9 +161,9 @@ export default function Navbar() {
                   id="mobile-nav-cta"
                   href="#reservation"
                   onClick={(e) => handleSmoothScroll(e, "#reservation")}
-                  className="flex items-center justify-center space-x-2 w-full py-3.5 rounded-xl bg-emerald-900 text-white font-bold tracking-widest uppercase text-xs shadow-md shadow-emerald-950/20 hover:bg-emerald-950 active:scale-[0.98] transition-all"
+                  className="flex items-center justify-center space-x-2 w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-400 via-emerald-500 to-emerald-600 text-white font-bold tracking-widest uppercase text-xs shadow-md shadow-emerald-500/15 hover:from-gold-300 hover:to-emerald-500 active:scale-[0.98] transition-all"
                 >
-                  <Calendar className="h-4 w-4 text-gold-300" />
+                  <Calendar className="h-4 w-4 text-white" />
                   <span>Reserve a Table</span>
                 </a>
               </li>

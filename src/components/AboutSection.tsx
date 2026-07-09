@@ -17,7 +17,7 @@ export default function AboutSection() {
         {/* Story Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-24">
           <div className="lg:col-span-6 space-y-6">
-            <span className="text-emerald-700 font-mono text-xs uppercase tracking-[0.3em] font-semibold block">
+            <span className="text-emerald-500 font-mono text-xs uppercase tracking-[0.3em] font-semibold block">
               Our Heritage & Story
             </span>
             <h2 className="font-serif text-4xl md:text-5xl text-gray-900 tracking-tight font-bold">
@@ -25,7 +25,7 @@ export default function AboutSection() {
             </h2>
             <div className="h-0.5 w-16 bg-gold-400" />
             
-            <p className="font-serif text-lg text-emerald-800 italic font-medium">
+            <p className="font-serif text-lg text-emerald-600 italic font-medium">
               "{tagline}"
             </p>
             <p className="text-gray-600 font-sans text-sm md:text-base font-light leading-relaxed">
@@ -35,7 +35,7 @@ export default function AboutSection() {
             {/* Core Values badges */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div className="flex items-center space-x-3 bg-white p-4.5 rounded-2xl border border-neutral-100 shadow-sm">
-                <div id="about-value-1" className="p-2.5 bg-emerald-50 rounded-xl text-emerald-700">
+                <div id="about-value-1" className="p-2.5 bg-emerald-50 rounded-xl text-emerald-500">
                   <Leaf className="h-5 w-5" />
                 </div>
                 <div>
@@ -45,7 +45,7 @@ export default function AboutSection() {
               </div>
               
               <div className="flex items-center space-x-3 bg-white p-4.5 rounded-2xl border border-neutral-100 shadow-sm">
-                <div id="about-value-2" className="p-2.5 bg-emerald-50 rounded-xl text-emerald-700">
+                <div id="about-value-2" className="p-2.5 bg-emerald-50 rounded-xl text-emerald-500">
                   <Shield className="h-5 w-5" />
                 </div>
                 <div>

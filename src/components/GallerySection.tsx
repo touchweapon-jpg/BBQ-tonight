@@ -79,8 +79,8 @@ export default function GallerySection() {
               onClick={() => setActiveFilter(filter.key)}
               className={`px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
                 activeFilter === filter.key
-                  ? "bg-emerald-900 text-white shadow-md shadow-emerald-950/20"
-                  : "bg-emerald-50/50 text-emerald-800 hover:bg-emerald-100/50"
+                  ? "bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
+                  : "bg-emerald-50/50 text-emerald-500 hover:bg-emerald-100/50 hover:text-emerald-600"
               }`}
             >
               {filter.label}

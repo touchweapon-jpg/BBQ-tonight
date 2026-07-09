@@ -54,7 +54,7 @@ export default function ReviewsSection() {
         
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="text-emerald-700 font-mono text-xs uppercase tracking-[0.3em] font-semibold block mb-3">
+          <span className="text-emerald-500 font-mono text-xs uppercase tracking-[0.3em] font-semibold block mb-3">
             Guest Testimonials
           </span>
           <h2 className="font-serif text-4xl md:text-5xl text-gray-900 tracking-tight font-bold">
@@ -121,7 +121,7 @@ export default function ReviewsSection() {
                     <h4 className="font-serif font-bold text-gray-900 text-sm md:text-base">
                       {currentReview.name}
                     </h4>
-                    <p className="text-emerald-700 text-xs font-sans tracking-wide uppercase font-semibold">
+                    <p className="text-emerald-500 text-xs font-sans tracking-wide uppercase font-semibold">
                       {currentReview.role || "Discerning Patron"}
                     </p>
                   </div>

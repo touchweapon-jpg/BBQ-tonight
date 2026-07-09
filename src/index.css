@@ -6,45 +6,45 @@
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
-  /* Custom Premium Color System */
-  --color-emerald-50: #f1f8f5;
-  --color-emerald-100: #dcece2;
-  --color-emerald-200: #badbc8;
-  --color-emerald-300: #8ec3a4;
-  --color-emerald-400: #5ea17a;
-  --color-emerald-500: #1b7a43;
-  --color-emerald-600: #135d32;
-  --color-emerald-700: #0d4624;
-  --color-emerald-800: #09321b;
-  --color-emerald-900: #062313;
-  --color-emerald-950: #04170c;
+  /* Custom Premium BBQ Color System */
+  --color-emerald-50: #FFF6EC; /* Premium Cream */
+  --color-emerald-100: #FFF0DF; /* Light Orange Cream */
+  --color-emerald-200: #FCD0BF;
+  --color-emerald-300: #FAA885;
+  --color-emerald-400: #F58051;
+  --color-emerald-500: #E65A1E; /* Primary BBQ Orange */
+  --color-emerald-600: #D63B22; /* Accent Flame Red */
+  --color-emerald-700: #B82E18;
+  --color-emerald-800: #8C2413;
+  --color-emerald-900: #2D2D2D; /* Charcoal */
+  --color-emerald-950: #1A1A1A; /* Text / Dark Charcoal */
 
-  --color-gold-50: #faf7f0;
-  --color-gold-100: #f4eed9;
-  --color-gold-200: #ebdcb3;
-  --color-gold-300: #dfc285;
-  --color-gold-400: #d2a758;
-  --color-gold-500: #c58e31;
-  --color-gold-600: #ab7827;
-  --color-gold-700: #8c5f1e;
-  --color-gold-800: #6d4717;
-  --color-gold-900: #523412;
-  --color-gold-950: #2d1c09;
+  --color-gold-50: #FFFDF8; /* Warm Ivory */
+  --color-gold-100: #FFF9EB;
+  --color-gold-200: #FDECC8;
+  --color-gold-300: #FCD997;
+  --color-gold-400: #F5A623; /* Secondary Golden Orange */
+  --color-gold-500: #E65A1E; /* Primary BBQ Orange */
+  --color-gold-600: #D63B22; /* Accent Flame Red */
+  --color-gold-700: #B32E1B;
+  --color-gold-800: #8C2413;
+  --color-gold-900: #2D2D2D;
+  --color-gold-950: #1A1A1A;
 }
 
-/* Elegant scrollbar styling */
+/* Elegant scrollbar styling matching BBQ themes */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #fbf9f4;
+  background: #FFFDF8; /* Warm Ivory */
 }
 ::-webkit-scrollbar-thumb {
-  background: #c58e31; /* gold-500 */
+  background: #E65A1E; /* Deep BBQ Orange */
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ab7827; /* gold-600 */
+  background: #D63B22; /* Flame Red */
 }
 
 html {
@@ -52,7 +52,7 @@ html {
 }
 
 body {
-  background-color: #fbfaf6;
-  color: #0c1410;
+  background-color: #FFFDF8; /* Warm Ivory */
+  color: #1A1A1A; /* Text */
   overflow-x: hidden;
 }
