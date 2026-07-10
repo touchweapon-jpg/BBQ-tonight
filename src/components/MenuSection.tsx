@@ -131,7 +131,7 @@ export default function MenuSection() {
 
   return (
     <section id="menu" className="py-24 bg-gradient-to-b from-emerald-50/15 via-white to-emerald-50/10 scroll-mt-12 overflow-hidden">
-      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] mx-auto px-6 md:px-12">
+      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] 4xl:max-w-[1728px] 5xl:max-w-[1920px] mx-auto px-6 md:px-12">
         
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-14">
@@ -173,7 +173,7 @@ export default function MenuSection() {
 
         {/* One-by-One Theatrical Showcase Block */}
         {activeItem && (
-          <div className="relative max-w-6xl 2xl:max-w-[1320px] 3xl:max-w-[1480px] mx-auto">
+          <div className="relative max-w-6xl 2xl:max-w-[1320px] 3xl:max-w-[1480px] 4xl:max-w-[1600px] 5xl:max-w-[1800px] mx-auto">
             {/* 
               No rigid card container here! An elegant, open, grid structure floating 
               seamlessly over the body theme background with deep artistic negative space.

@@ -12,7 +12,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="py-24 bg-[#FAF9F5] scroll-mt-12 overflow-hidden">
-      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] mx-auto px-6 md:px-12">
+      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] 4xl:max-w-[1728px] 5xl:max-w-[1920px] mx-auto px-6 md:px-12">
         
         {/* Story Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-24">

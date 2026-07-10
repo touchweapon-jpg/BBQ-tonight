@@ -6,6 +6,11 @@
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
+  /* Custom responsive screen breakpoints for larger laptop and desktop monitors */
+  --breakpoint-3xl: 1600px;
+  --breakpoint-4xl: 1920px;
+  --breakpoint-5xl: 2560px;
+
   /* Custom Premium BBQ Color System */
   --color-emerald-50: #FFF6EC; /* Premium Cream */
   --color-emerald-100: #FFF0DF; /* Light Orange Cream */

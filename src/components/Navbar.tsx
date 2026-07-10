@@ -64,7 +64,7 @@ export default function Navbar() {
         isScrolled ? "py-1.5" : "py-2.5"
       }`}
     >
-      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] mx-auto px-6 md:px-12 flex justify-between items-center">
+      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] 4xl:max-w-[1728px] 5xl:max-w-[1920px] mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo and Brand */}
         <a
           id="nav-logo"

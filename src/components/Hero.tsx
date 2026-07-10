@@ -51,7 +51,7 @@ export default function Hero() {
       <div className="absolute inset-x-0 bottom-0 top-32 sm:top-40 lg:top-[13%] opacity-[0.035] bg-[radial-gradient(#E65A1E_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
 
       {/* Main Grid Wrapper */}
-      <div className="relative max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] mx-auto px-6 md:px-12 w-full z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div className="relative max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] 4xl:max-w-[1728px] 5xl:max-w-[1920px] mx-auto px-6 md:px-12 w-full z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         
         {/* Left Side: Editorial Typography & Copywriting */}
         <div className="lg:col-span-7 space-y-8 text-left">

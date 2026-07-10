@@ -50,7 +50,7 @@ export default function ReviewsSection() {
 
   return (
     <section id="reviews" className="py-24 bg-emerald-50/20 scroll-mt-12 overflow-hidden">
-      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] mx-auto px-6 md:px-12">
+      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] 4xl:max-w-[1728px] 5xl:max-w-[1920px] mx-auto px-6 md:px-12">
         
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-14">
@@ -68,7 +68,7 @@ export default function ReviewsSection() {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative max-w-3xl 2xl:max-w-4xl mx-auto bg-white border border-neutral-100 rounded-[2.5rem] p-5 sm:p-8 md:p-14 shadow-xl shadow-gray-200/50">
+        <div className="relative max-w-3xl 2xl:max-w-4xl 3xl:max-w-5xl 4xl:max-w-6xl mx-auto bg-white border border-neutral-100 rounded-[2.5rem] p-5 sm:p-8 md:p-14 shadow-xl shadow-gray-200/50">
           
           {/* Decorative Giant Quote icon */}
           <div className="absolute top-8 left-8 text-emerald-100/30 -z-50 select-none">

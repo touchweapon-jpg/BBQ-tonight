@@ -50,7 +50,7 @@ export default function FAQsSection() {
 
   return (
     <section id="faqs" className="py-24 bg-white scroll-mt-12 overflow-hidden border-t border-neutral-100">
-      <div className="max-w-4xl 2xl:max-w-5xl mx-auto px-6 md:px-12">
+      <div className="max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl 4xl:max-w-7xl 5xl:max-w-8xl mx-auto px-6 md:px-12">
         
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-16">

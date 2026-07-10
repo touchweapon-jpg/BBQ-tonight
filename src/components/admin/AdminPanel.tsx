@@ -174,7 +174,7 @@ export default function AdminPanel({ onBackToClient }: AdminPanelProps) {
 
         {/* Dynamic Inner Panel viewport */}
         <main className="flex-1 p-4 sm:p-6 lg:p-8">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] 4xl:max-w-[1728px] 5xl:max-w-[1920px] mx-auto">
             {renderActiveView()}
           </div>
         </main>

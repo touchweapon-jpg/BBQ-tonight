@@ -160,7 +160,7 @@ export default function ReservationSection() {
 
   return (
     <section id="reservation" className="py-24 bg-white scroll-mt-12 group">
-      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] mx-auto px-6 md:px-12">
+      <div className="max-w-7xl 2xl:max-w-[1440px] 3xl:max-w-[1600px] 4xl:max-w-[1728px] 5xl:max-w-[1920px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Reservation Story Banner Section */}
