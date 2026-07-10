@@ -6,7 +6,7 @@
 import React from "react";
 import { motion } from "motion/react";
 
-const logoImg = "/src/assets/images/bbq-t-web-logo.png";
+import logoImg from "../assets/images/bbq-t-web-logo.png";
 
 interface LogoProps {
   className?: string;
